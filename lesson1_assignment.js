@@ -4,36 +4,28 @@ let day = String(date.getDay())
 function checkDay(day) {
     switch(day) {
         case "1":
-            console.log("Today is Monday")
-            console.log("Set goals for the week")
+            task = "Today is Monday - Set goals for the week"
             break
         case "2":
-            console.log("Today is Tuesday")
-            console.log("Prepare for engineering meetings")
+            task = "Today is Tuesday - Prepare for engineering meetings"
             break
         case "3":
-            console.log("Today is Wednesday")
-            console.log("Focus day")
+            task = "Today is Wednesday - Focus day"
             break
         case "4":
-            console.log("Today is Thursday")
-            console.log("Check in on goals and adjust plans")
+            task = "Today is Thursday - Check in on goals and adjust plans"
             break
         case "5":
-            console.log("Today is Friday")
-            console.log("Almost the weekend!")
+            task = "Today is Friday - Almost the weekend! Finish any pending tasks before 5pm."
             break
         case "6":
-            console.log("Today is Saturday")
-            console.log("See friends!")
+            task = "Today is Saturday - See friends!"
             break
         case "0":
-            console.log("Today is Sunday")
-            console.log("Cry about Monday")
+            task  = "Today is Sunday - Cry about Monday"
             break
-        default:
-            console.log("sleep")
     }
+    return task
 }
 
-checkDay(day)
+console.log(checkDay(day))
